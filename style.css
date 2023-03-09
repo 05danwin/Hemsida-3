@@ -1,0 +1,21 @@
+*{
+    margin:0;
+    padding:0;
+    border:0;
+}
+
+header{
+    visibility:visible;
+    width:100vw;
+    height:10vh;
+    background-color: blueviolet;
+}
+
+footer{
+    position:absolute;
+    visibility:visible;
+    width:100vw;
+    height:10vh;
+    background-color: blueviolet;
+    bottom:0;
+}
