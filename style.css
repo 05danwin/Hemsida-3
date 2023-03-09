@@ -8,7 +8,7 @@ header{
     visibility:visible;
     width:100vw;
     height:10vh;
-    background-color: blueviolet;
+    background-color: gray;
 }
 
 footer{
@@ -16,6 +16,102 @@ footer{
     visibility:visible;
     width:100vw;
     height:10vh;
-    background-color: blueviolet;
+    background-color: gray;
     bottom:0;
+}
+
+/* HAMBURGARMENYN ============================================================================================================== */
+#hamburgarmeny {
+    display: block;
+    position: fixed;
+    top: calc((10vh - 60px) / 2);
+    left: 5vw;
+    height: 70px;
+    width: 70px;
+}
+
+#hamburgarmeny a {
+    text-decoration: none;
+    transition: color 0.5s ease;
+    color:black;
+}
+
+#hamburgarmeny a:hover {
+    color: white;
+}
+
+#hamburgarmeny input {
+    color: green;
+    width: 70px;
+    height: 70px;
+    position: fixed;
+    top: calc((10vh - 70px) / 2);
+    left: 5vw;
+    cursor: pointer;
+    opacity: 0;
+    z-index:2;
+}
+
+#hamburgarmeny span {
+    display: block;
+    width: 55px;
+    height: 10px;
+    margin-bottom: 5px;
+    margin-left: 7.5px;
+    position: relative;
+    background: black;
+    border-radius: 4px;
+    transform-origin: 0px 0px;
+    z-index:1;
+    transition: transform 0.4s cubic-bezier(0.8, 0.15, 0.05, 1),
+        background 0.5s ease;
+    
+}
+
+#hamburgarmeny span:nth-child(2) {
+    margin-top: 12.5px;
+}
+
+#hamburgarmeny span:nth-last-child(2) {
+    transform-origin: 0% 100%;
+    margin-bottom: 0;
+}
+
+#hamburgarmeny input:checked ~ span {
+    background: white;
+}
+
+#hamburgarmeny input:checked ~ span:nth-last-child(3) {
+    transform: rotate(0deg) scale(0.66, 1);
+}
+
+#hamburgarmeny input:checked ~ span:nth-last-child(2) {
+    transform: rotate(0deg) scale(0.33, 1);
+}
+
+#meny {
+    position: fixed;
+    display: flex;
+    flex-direction: column;
+    text-align: center;
+    justify-content: space-around;
+    font-size: calc(4vh + 15px);
+    font-weight: 600;
+    width: calc(10vw + 70px);
+    height: calc(20vh + 35px);
+    top: 0vh;
+    left: 0vw;
+    column-gap: 50px;
+    padding-top: 10vh;
+    padding-bottom: 2.5vh;
+    background: gray;
+    -webkit-font-smoothing: antialiased;
+    border-bottom-right-radius: 20px;
+    transform: translate(-155%, 0%);
+    transition: transform 0.5s cubic-bezier(0.8, 0.15, 0.05, 1);
+    box-shadow: gray 0px 1px 5px;
+}
+
+#hamburgarmeny input:checked ~ ul {
+    transform: none;
 }
