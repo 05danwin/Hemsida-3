@@ -13,11 +13,3 @@ buttonRight.onclick = function () {
       behavior:"smooth" 
     });
   };
-
-window.onload = function() {
-mapboxgl.accessToken = "pk.eyJ1IjoiZGFud2luMDUiLCJhIjoiY2xmamd0dzFuMDB0OTNzbWptMXUxNGlqdSJ9.PXhBG9sxypeXB1s_R4o-fQ";
-var map = new mapboxgl.Map({
-    container: "map",
-    style: "mapbox://styles/mapbox/streets-v11",
-});
-};

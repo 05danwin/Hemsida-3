@@ -29,38 +29,51 @@
         <a href="index3.html"><li>KONTAKT</li></a>
       </ul>
     </nav>
-    <form>
-      <div class="rad">
-        <i class="fa-solid fa-user fa-2x"></i>
-        <input class="kontakt-inputruta" type="text" placeholder="First Name" />
-      </div>
-      <div class="rad">
-        <i class="fa-solid fa-user fa-2x"></i>
-        <input class="kontakt-inputruta" type="text" placeholder="Last name" />
-      </div>
-      <div class="rad">
-        <i class="fa-solid fa-envelope fa-2x"></i>
-        <input class="kontakt-inputruta" type="text" placeholder="E-mail" />
-      </div>
-      <div class="rad">
-        <i class="fa-solid fa-phone fa-2x"></i>
-        <input class="kontakt-inputruta" type="text" placeholder="Phone" />
-      </div>
+    <div id="form-map-container">
+      <div>
+        <form>
+          <div class="rad">
+            <i class="fa-solid fa-user fa-2x"></i>
+            <input
+              class="kontakt-inputruta"
+              type="text"
+              placeholder="First Name"
+            />
+          </div>
+          <div class="rad">
+            <i class="fa-solid fa-user fa-2x"></i>
+            <input
+              class="kontakt-inputruta"
+              type="text"
+              placeholder="Last name"
+            />
+          </div>
+          <div class="rad">
+            <i class="fa-solid fa-envelope fa-2x"></i>
+            <input class="kontakt-inputruta" type="text" placeholder="E-mail" />
+          </div>
+          <div class="rad">
+            <i class="fa-solid fa-phone fa-2x"></i>
+            <input class="kontakt-inputruta" type="text" placeholder="Phone" />
+          </div>
 
-      <div class="stor-rad">
-        <i class="fa-solid fa-pen fa-2x"></i>
-        <textarea
-          class="kontakt-stor-inputruta"
-          style="resize: none"
-          placeholder="Message"
-        ></textarea>
+          <div class="stor-rad">
+            <i class="fa-solid fa-pen fa-2x"></i>
+            <textarea
+              class="kontakt-stor-inputruta"
+              style="resize: none"
+              placeholder="Message"
+            ></textarea>
+          </div>
+          <button class="knapp">Send</button>
+        </form>
       </div>
-      <button class="knapp">Send</button>
-    </form>
-    <div id="map" style="width: 400px; height: 300px"></div>
+      <div id="map"></div>
+    </div>
     <footer>
       <p>All rights reserved</p>
       <p>Copyright dont sue</p>
     </footer>
   </body>
+  <script src="script3.js"></script>
 </html>
