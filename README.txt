@@ -1,0 +1,1 @@
+hemsidan är anpassad för 67% skala på webbläsaren

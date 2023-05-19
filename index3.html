@@ -13,7 +13,8 @@
       href="https://api.mapbox.com/mapbox-gl-js/v2.3.1/mapbox-gl.css"
       rel="stylesheet"
     />
-    <title>INDEX3</title>
+    <link rel="icon" href="logga vit bakgrund.PNG" />
+    <title>Angler's Outlet</title>
     <script src="https://api.mapbox.com/mapbox-gl-js/v2.3.1/mapbox-gl.js"></script>
   </head>
   <body>
@@ -32,6 +33,7 @@
         <a href="index3.html"><li>KONTAKT</li></a>
       </ul>
     </nav>
+    <h5>Kontakta oss</h5>
     <div id="form-map-container">
       <div id="form-div">
         <form>
@@ -40,7 +42,7 @@
             <input
               class="kontakt-inputruta"
               type="text"
-              placeholder="First Name"
+              placeholder="Förnamn"
             />
           </div>
           <div class="rad">
@@ -48,7 +50,7 @@
             <input
               class="kontakt-inputruta"
               type="text"
-              placeholder="Last name"
+              placeholder="Efternamn"
             />
           </div>
           <div class="rad">
@@ -57,7 +59,11 @@
           </div>
           <div class="rad">
             <i class="fa-solid fa-phone fa-2x"></i>
-            <input class="kontakt-inputruta" type="text" placeholder="Phone" />
+            <input
+              class="kontakt-inputruta"
+              type="text"
+              placeholder="Telefon"
+            />
           </div>
 
           <div class="stor-rad">
@@ -65,17 +71,26 @@
             <textarea
               class="kontakt-stor-inputruta"
               style="resize: none"
-              placeholder="Message"
+              placeholder="Ditt meddelande"
             ></textarea>
           </div>
-          <button class="knapp">Send</button>
+          <button id="skicka-knapp">Skicka</button>
         </form>
       </div>
       <div id="map"></div>
     </div>
     <footer>
-      <p>All rights reserved</p>
-      <p>Copyright dont sue</p>
+      <p class="footer-stor-textruta">
+        Angler's outlet är en nätshopp där du kan handla fiskespön och allt
+        fiske-relaterat. Handla här på vår sida eller besök vår fysiska affär!
+      </p>
+      <ul class="footer-textruta">
+        <li>Åva skolgränd 1, 183 34 Täby</li>
+        <li>070-531 76 52</li>
+        <li>anglersoutlet@gmail.com</li>
+      </ul>
+      <p class="footer-textruta">All rights reserved</p>
+      <p class="footer-textruta">Copyright 2023 ©</p>
     </footer>
   </body>
   <script src="script3.js"></script>
